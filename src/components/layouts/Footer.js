@@ -19,32 +19,32 @@ function Footer() {
                     </div>
                         {/* Colum 2 */}
                         <div className="col-md-3 col-sm-6">
-                        <h4>lorem impsum</h4>
+                        <h4>Programming Skills</h4>
                         <ul className="list-unstyled">
-                            <li><a href="/">If you would like to contact me, feel free to</a></li>
-                            <li><a href="/">If you would like to contact me, feel free to</a></li>
-                            <li><a href="/">If you would like to contact me, feel free to</a></li>
-                            <li><a href="/">If you would like to contact me, feel free to</a></li>
+                            <li>Html</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>React Native</li>
                         </ul>
                     </div>
                         {/* Colum 3 */}
                         <div className="col-md-3 col-sm-6">
-                        <h4>lorem impsum</h4>
+                        <h4>Platforms</h4>
                         <ul className="list-unstyled">
-                            <li>If you would like to contact me, feel free to</li>
-                            <li>If you would like to contact me, feel free to</li>
-                            <li>If you would like to contact me, feel free to</li>
-                            <li>If you would like to contact me, feel free to</li>
+                            <li><a href="/"></a>Github</li>
+                            <li><a href="/"></a>Steam</li>
+                            <li><a href="/"></a>Twitter</li>
                         </ul>
                     </div>
                         {/* Colum 4 */}
-                        <div className="col-md-3 col-sm-6">
-                        <h4>lorem impsum</h4>
+                        <div className="col-md-3 col-sm-3">
+                        <h4>Hobbies</h4>
                         <ul className="list-unstyled">
-                            <li>If you would like to contact me, feel free to</li>
-                            <li>If you would like to contact me, feel free to</li>
-                            <li>If you would like to contact me, feel free to</li>
-                            <li>If you would like to contact me, feel free to</li>
+                            <li>Music</li>
+                            <li>Video Games</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
                         </ul>
                     </div>
                 </div>
@@ -66,13 +66,13 @@ export default Footer;
 const FooterContainer = styled.footer`
     .footer-middle {
         background: var(--mainDark);
-        padding-top: 3rem;
+        padding-top: 2rem;
         color: var(--mainWhite);
     }
 
     .footer-bottom {
         padding-top: 3rem;
-        padding-bottom: 2rem;
+        padding-bottom: .2rem;
     }
 
     ul li a {
