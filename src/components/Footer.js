@@ -1,19 +1,85 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function Footer() {
     return (
-        
-        <div className="main-footer" style={{margin:'0', fontFamily: 'sans-serif', maxWidth: '800px', padding:'35px 15px', width: '100'}}>
-        <h1 style={{fontWeight:'500', fontSize: '2.8rem'}}>Hello!</h1>
-        <p style={{fontSize:'1.3rem', lineHeight:'1.7', fontWeight: '400'}}>My name is Sergio, I'm a 27 year old front end web developer currently based in Monterrey, NL, Mexico. I currently work part-time at <a style={{textDecoration:'none', color: '#008b8b'}} href="http://arbatech.io/" target="_blank">ArbatechSolutions</a>.</p>
-        <p style={{fontSize:'1.3rem', lineHeight:'1.7', fontWeight: '400'}}>If you would like to contact me, feel free to reach out to me with my email - <a style={{textDecoration:'none', color: '#008b8b'}}  href="mailto:sergiotrejordz@gmail.com">sergiotrejordz@gmail.com</a>, we can set up a quick chat or even a meet up, just feel free to contact me. I look forward to hearing from you!</p>
-        <p style={{fontSize:'1.3rem', lineHeight:'1.7', fontWeight: '400'}}>Aside from working as a web developer, I do moderation stuff on <a style={{textDecoration:'none', color: '#008b8b'}}  href="https://steamcommunity.com/id/ultralag/" target="_blank">Steam</a> and try to rank up at some video games in my spare time.</p>
-        <p style={{fontSize:'1.3rem', lineHeight:'1.7', fontWeight: '400'}}>If you would like to stay up to date with me, or just to have a casual chat/check, feel free to follow me on <a style={{textDecoration:'none', color: '#008b8b'}}  href="https://twitter.com/elSergioTrejo" target="_blank">Twitter</a> and <a style={{textDecoration:'none', color: '#008b8b'}}  href="https://github.com/sergio-trdz" target="_blank">Github</a>!</p>
-        <p style={{fontSize:'1.3rem', lineHeight:'1.7', fontWeight: '400', marginTop: '4rem'}} className="m">Greetings!</p>
-        <p style={{fontSize:'1.3rem', lineHeight:'1.7', fontWeight: '400'}}>- Sergio</p>
+       <FooterContainer className="main-footer">
+        <div className="footer-middle">
+            <div className="container">
+                <div className="row">
+                    {/* Colum 1 */}
+                    <div className="col-md-3 col-sm-6">
+                        <h4>Contact Me</h4>
+                        <ul className="list-unstyled">
+                            <li>Sergio Trejo Rodríguez</li>
+                            <li>sergiotrejordz@gmail.com</li>
+                            <li>812-352-9822</li>
+                            <li>Monterrey, N.L. 64700</li>
+                        </ul>
+                    </div>
+                        {/* Colum 2 */}
+                        <div className="col-md-3 col-sm-6">
+                        <h4>lorem impsum</h4>
+                        <ul className="list-unstyled">
+                            <li><a href="/">If you would like to contact me, feel free to</a></li>
+                            <li><a href="/">If you would like to contact me, feel free to</a></li>
+                            <li><a href="/">If you would like to contact me, feel free to</a></li>
+                            <li><a href="/">If you would like to contact me, feel free to</a></li>
+                        </ul>
+                    </div>
+                        {/* Colum 3 */}
+                        <div className="col-md-3 col-sm-6">
+                        <h4>lorem impsum</h4>
+                        <ul className="list-unstyled">
+                            <li>If you would like to contact me, feel free to</li>
+                            <li>If you would like to contact me, feel free to</li>
+                            <li>If you would like to contact me, feel free to</li>
+                            <li>If you would like to contact me, feel free to</li>
+                        </ul>
+                    </div>
+                        {/* Colum 4 */}
+                        <div className="col-md-3 col-sm-6">
+                        <h4>lorem impsum</h4>
+                        <ul className="list-unstyled">
+                            <li>If you would like to contact me, feel free to</li>
+                            <li>If you would like to contact me, feel free to</li>
+                            <li>If you would like to contact me, feel free to</li>
+                            <li>If you would like to contact me, feel free to</li>
+                        </ul>
+                    </div>
+                </div>
+                {/* Footer Bootom */}
+                <div className="footer-bottom">
+                    <p className="text-xs-center">
+                        &copy;{new Date().getFullYear()} My Landing React App - All rights reserved.
+                    </p>
+                </div>
+            </div>
         </div>
-    )
+       </FooterContainer>
+    );
 }
 
 
-export default Footer;
+export default Footer;  
+
+const FooterContainer = styled.footer`
+    .footer-middle {
+        background: var(--mainDark);
+        padding-top: 3rem;
+        color: var(--mainWhite);
+    }
+
+    .footer-bottom {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    ul li a {
+        color: var(--mainGrey);
+    }
+
+    ul li a:hover {
+        color: var(mainLightGrey);
+    }
+`;
