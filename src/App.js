@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/layouts/Navbar';
-import Front from './components/layouts/Front'
 import Footer from './components/layouts/Footer'
 //react router import
 import { Switch, Route } from 'react-router-dom';
@@ -10,6 +9,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Projects from './components/pages/Projects';
 import ContactMe from './components/pages/ContactMe';
+import PageNotFound from './components/pages/PageNotFound'
 //view for background color import
 import { View } from "react";
 
@@ -31,6 +31,7 @@ class App extends Component {
         <Route exact path="/" component={Home}/>
         <Route path="/projects" component={Projects}/>
         <Route path="/contactme" component={ContactMe}/>
+        <Route component={PageNotFound}/>
       </Switch>
       <Footer />
     </div>

@@ -24,27 +24,27 @@ function Footer() {
                             <li>Html</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
-                            <li>Reactjs</li>
+                            <li>React JS</li>
                             <li>React Native</li>
                         </ul>
                     </div>
                         {/* Colum 3 */}
-                        <div className="col-md-3 col-sm-6">
+                        <div className="col-md-3 col-sm-6 text-white">
                         <h4>Platforms</h4>
                         <ul className="list-unstyled">
-                            <li><a href="/"></a>Github</li>
-                            <li><a href="/"></a>Steam</li>
-                            <li><a href="/"></a>Twitter</li>
+                            <li><a style={{textDecoration:'none', color: '#FFFFFF'}} href="https://github.com/sergio-trdz/" target="_blank">Github</a></li>
+                            <li><a style={{textDecoration:'none', color: '#FFFFFF'}} href="https://steamcommunity.com/id/ultralag/" target="_blank">Steam</a></li>
+                            <li><a style={{textDecoration:'none', color: '#FFFFFF'}} href="https://twitter.com/elSergioTrejo/" target="_blank">Twitter</a></li>
                         </ul>
                     </div>
                         {/* Colum 4 */}
-                        <div className="col-md-3 col-sm-3">
+                        <div className="col-md-3 col-sm-6">
                         <h4>Hobbies</h4>
                         <ul className="list-unstyled">
                             <li>Music</li>
                             <li>Video Games</li>
                             <li>Comics</li>
-                            <li>Movies</li>
+                            <li>Languages</li>
                         </ul>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const FooterContainer = styled.footer`
 
     .footer-bottom {
         padding-top: 3rem;
-        padding-bottom: .2rem;
+        padding-bottom: .1em;
     }
 
     ul li a {
