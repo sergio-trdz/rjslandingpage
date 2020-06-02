@@ -13,3 +13,11 @@
 .navbar-toggler {
   border: none;
 }
+
+.background {
+  background-image: url(../src/floating-cogs.svg);
+  background-color: var(--mainDark);
+  min-height: calc(100vh - 100px);
+  
+  background-attachment: fixed;
+}

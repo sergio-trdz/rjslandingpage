@@ -1,12 +1,55 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class ContactMe extends Component {
     render() {
         return (
-            <div>
-                <h2>Contact Me</h2>
-            </div>
-        )
+            <section clasName="my-5 py-5">
+                <div className="container" style={{textAlignVertical: "center",padding: 100}}>
+                    <div className="well well-sm">
+                        <h3>
+                            <strong>Location</strong>
+                        </h3>
+                    </div> 
+                
+                    <div className="row">
+                        <div className="col-md-7">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1p-p6XKuAHCat7C-huc1ulKi7Ebs51Y-A" style={{
+                                border: '0',
+                                width: '100%',
+                                height: '315px',
+                                frameborder: '0'
+                                }} allowFullScreen  
+                            />
+                        </div>
+                        <div className="col-md-5" style={{}}>
+                                <h4><strong>Contact Me</strong></h4>
+                                <form>
+                                <div className="form-group">
+                                    <input type="text" className="form-control" 
+                                placeholder="Name"/>
+                                </div>
+                                <div className="form-group">
+                                    <input type="email" className="form-control" 
+                                    placeholder="Email"/>
+                                </div>
+                                <div className="form-group">
+                                    <input type="tel" className="form-control" 
+                                 placeholder="Phone"/>
+                                </div>
+                                <textarea className="form-control" cols="30" rows="3" placeholder="Message"
+                                />
+                                <Link className="btn btn-outline-primary text-uppercase mt-1">
+                                    <i className="fa fa-paper-plane-o" aria-hidden="true"/>
+                                    <i className="fab fa-telegram plane"/>
+                                    &nbsp;Send
+                                </Link>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
     }
 }
 
