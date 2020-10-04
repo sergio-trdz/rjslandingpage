@@ -21,8 +21,9 @@ function Footer() {
                         <div className="col-md-3 col-sm-6">
                         <h4>Programming Skills</h4>
                         <ul className="list-unstyled">
-                            <li>Html</li>
+                            <li>HTML</li>
                             <li>CSS</li>
+                            <li>Bootstrap</li>
                             <li>JavaScript</li>
                             <li>React JS</li>
                             <li>React Native</li>
